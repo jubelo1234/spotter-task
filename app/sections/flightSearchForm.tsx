@@ -155,7 +155,7 @@ function FlightSearchForm() {
           <PassengerInput value={passengers} onChange={setPassengers} />
         </div>
       </div>
-      <hr className="bg-card-border h-px w-full" />
+      <hr className="bg-card-border h-px w-full border-none outline-none p-0" />
       <div className="px-3 grid-cols-1 lg:grid-cols-[30fr_30fr_40fr] gap-2.5 grid">
         <FlightLocationInput
           name="departure"
@@ -183,7 +183,9 @@ function FlightSearchForm() {
         />
         <div
           className={
-            isRoundTrip ? "grid grid-cols-2 gap-2.5" : "grid grid-cols-1"
+            isRoundTrip
+              ? "grid grid-cols-1 sm:grid-cols-2 gap-2.5"
+              : "grid grid-cols-1"
           }
         >
           <div>

@@ -12,6 +12,16 @@ export default function Home() {
         </p>
       </div>
       <FlightSearchForm />
+
+      {/* flight list section */}
+      <div>
+        <div className="bg-white rounded-lg border border-card-border p-3">
+          <div className="flex justify-start items-center gap-2.5">
+            <div className="size-12 rounded-[6px] bg-gray-200"></div>
+            <h3 className="text-xl font-bold text-primary">Delta Airlines</h3>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
